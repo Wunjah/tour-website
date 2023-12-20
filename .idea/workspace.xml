@@ -5,29 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbad1c56-add9-4474-9c92-ada5c5bb5bb4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bafut palace.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entree-Bamenda-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Map_of_Asia.svg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awing_cmr.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayaba.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bamenda.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pexels-baskin-creative-studios-1766838.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pexels-digital-buggu-192729.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pexels-fabian-reitmeier-707915.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pexels-mads-thomsen-2739013.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pexels-max-rahubovskiy-5997994.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photoupload.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/santa waterfall.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tour website.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index1.html" beforeDir="false" afterPath="$PROJECT_DIR$/index1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +66,7 @@
       <workItem from="1702879807079" duration="17776000" />
       <workItem from="1702977917200" duration="3016000" />
       <workItem from="1702986177659" duration="1107000" />
-      <workItem from="1703081791480" duration="359000" />
+      <workItem from="1703081791480" duration="2850000" />
     </task>
     <servers />
   </component>

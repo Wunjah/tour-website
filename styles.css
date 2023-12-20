@@ -299,7 +299,9 @@ textarea{
     height: 150px;
     background-color: lime;
     border-radius: 9px;
-    padding: 5px;
+}
+.comment p, .comment1 p{
+    padding: 10px 10px 10px 10px;
 }
 .submit{
     margin-left: 50px;
@@ -360,4 +362,7 @@ textarea{
 .Title-text-page2{
     margin-right: 50px;
     margin-bottom: 0;
+}
+.exp-text p{
+    line-height: 2px;
 }

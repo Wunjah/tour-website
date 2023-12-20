@@ -1,0 +1,91 @@
+.form_body{
+    background-color: whitesmoke;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}
+.form{
+    display: flex;
+    justify-content: center;
+
+}
+
+.form_body h2{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.information input{
+    width: 20rem;
+    height: 1.5rem;
+    margin-top: 0.5rem;
+    border: 0.5px solid;
+    border-color:#000;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* the sign up button */
+
+.information .contact_button{
+    width: 25%;
+    margin: auto;
+    color: white;
+    border-radius: 0.7rem;
+
+}
+
+.form_body button{
+    background-color: forestgreen;
+    border-color: green;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: center;
+}
+.icons i{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+
+/* supplementaries */
+/* forgot password */
+.forgot_password a {
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    color: #000;
+
+}
+span .forgot_password{
+    column-rule-color: #000;
+
+}
+form .need_account{
+    display: flex;
+    justify-content: center;
+}
+.need_account a{
+    color: #000;
+}
+
+
+/* the hover styling */
+.need_account a:hover{
+    color: forestgreen;
+}
+.forgot_password a:hover{
+    color: forestgreen;
+    text-decoration: underline;
+}
+.form_body h2{
+    color: forestgreen;
+}
+
