@@ -13,7 +13,7 @@ body{
     content : "";
     position: absolute;
     width: 100%;
-    background-image: url('images/pexels-max-rahubovskiy-5997994.jpg');
+    background-image: url('pexels-max-rahubovskiy-5997994.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -220,6 +220,13 @@ h3{
     margin-left: 85px;
     margin-top: 100px;
 }
+.others-section1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-left: 85px;
+    margin-top: 5px;
+}
 
 
 
@@ -238,10 +245,7 @@ div h2{
 .hovered {
     opacity: 0.7;
 }
-.input-file{
-    background-image: url('images/photoupload.jpg');
-}
-.input-file:active {
+.clicked {
      filter: grayscale(100%) brightness(50%) saturate(0%) hue-rotate(0deg);
  }
 .footer {
@@ -266,7 +270,7 @@ div h2{
     margin-left: 50px;
     box-sizing: border-box;
 }
-.title-text{
+.Title-text{
     margin-left: 50px;
 }
 .exp-text{
@@ -296,7 +300,7 @@ textarea{
     background-color: lime;
     border-radius: 9px;
 }
-.comment p{
+.comment p, .comment1 p{
     padding: 10px 10px 10px 10px;
 }
 .submit{
@@ -310,6 +314,21 @@ textarea{
     box-shadow: none;
     font-weight: bold;
 
+}
+.container-comment1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.comment1{
+    box-sizing: border-box;
+    width: 94%;
+    height: 150px;
+    background-color: lime;
+    border-radius: 9px;
+    padding: 5px;
 }
 .maps{
     width: 95%;
@@ -340,12 +359,10 @@ textarea{
     width: 100%;
     align-items: center;
 }
-.title-text-page2{
+.Title-text-page2{
     margin-right: 50px;
     margin-bottom: 0;
 }
-
-.image-main-page{
-    width: 30px;
-    height: 30px;
+.exp-text p{
+    line-height: 2px;
 }

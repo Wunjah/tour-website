@@ -1,8 +1,8 @@
 .form_body{
-    background-color: white;
+    background-color: whitesmoke;
     width: 50%;
     height: 100%;
-    margin: 9% auto;
+    margin: auto;
 }
 .form{
     display: flex;
