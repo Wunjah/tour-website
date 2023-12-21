@@ -4,7 +4,7 @@ let siteName = document.getElementById("site-name");
 let siteItem = document.querySelector(".customer-interest");
 let customerName = document.querySelector(".customer-name");
 let customerEmail = document.querySelector(".email");
-let customerTel = document.querySelector(".number");
+let scheduleDate = document.querySelector(".date");
 
 
 if (location.href.includes("=")) {
@@ -23,8 +23,8 @@ if (location.href.includes("=")) {
 
 
 document.querySelector(".btn").addEventListener("click", (e)=>{
-  window.location.href = `mailto:chenebametuge@gmail.com?subject=Sch@gcyfedule&body=${customerEmail.value.replaceAll(
-    " ",
-    "%20"
-  )},Tel:%20${customerTel.value.replaceAll(" ", "%20")}`;
+  console.log(scheduleDate.value);
+  console.log(customerEmail.value);
+  console.log(customerName.value);
+  window.location.href = `mailto:chenebametuge@gmail.com?subject=Schedule&body=${customerEmail.value.replaceAll(" ","%20")}%20Date:%20${scheduleDate.value}`;
 })
