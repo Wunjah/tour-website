@@ -252,6 +252,9 @@ div h2{
     background-color: green;
     color: white;
     padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 .container {
     max-width: 1200px;
