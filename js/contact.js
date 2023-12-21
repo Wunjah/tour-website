@@ -26,5 +26,5 @@ document.querySelector(".btn").addEventListener("click", (e)=>{
   console.log(scheduleDate.value);
   console.log(customerEmail.value);
   console.log(customerName.value);
-  window.location.href = `mailto:chenebametuge@gmail.com?subject=Schedule&body=Interested in ${customerName.value} ${customerEmail.value.replaceAll(" ","%20")}%20Date:%20${scheduleDate.value}`;
+  window.location.href = `mailto:chenebametuge@gmail.com?subject=Schedule&body=Name: ${customerName.value} ${customerEmail.value.replaceAll(" ","%20")}%20Date:%20${scheduleDate.value}`;
 })
