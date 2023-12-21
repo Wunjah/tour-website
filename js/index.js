@@ -14,8 +14,8 @@ inputElement.addEventListener("change", handleFileUpload);
 
 // Handle file upload event
 function handleFileUpload(event) {
-  const file = event.target.files; // Get the selected file object
-  console.log(file);
+  const file = event.target.files[0]; // Get the selected file object
+
   // Ensure the file is an image
   if (file && file.type.startsWith("image/")) {
     const reader = new FileReader();
