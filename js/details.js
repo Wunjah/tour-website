@@ -36,6 +36,9 @@ function ready() {
 
 function addComment() {
   let comment = document.querySelector("#comment-area");
+  if(comment.value === "" || comment.value === " "){
+    return undefined
+  }
   let newObj = {
     id: `${location.href.split("=")[1]}`,
     content: `${comment.value}`,
