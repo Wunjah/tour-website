@@ -85,6 +85,10 @@ h3{
      font-weight: bold;
  }
 
+ .active{
+     font-weight: bold;
+ }
+
  .home-text{
     position: absolute;
     width: 60%;
