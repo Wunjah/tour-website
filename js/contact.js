@@ -23,7 +23,7 @@ if (location.href.includes("=")) {
 
 
 document.querySelector(".btn").addEventListener("click", (e)=>{
-  window.location.href = `mailto:chenebametuge@gmail.com?subject=Schedule&body=${customerEmail.value.replaceAll(
+  window.location.href = `mailto:chenebametuge@gmail.com?subject=Sch@gcyfedule&body=${customerEmail.value.replaceAll(
     " ",
     "%20"
   )},Tel:%20${customerTel.value.replaceAll(" ", "%20")}`;
