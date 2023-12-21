@@ -51,6 +51,7 @@ function addComment() {
 
   output([commentData.length - 1], commentData, commentContainer);
 
+  comment.value = "";
   console.log(commentData);
   console.log(comment.value);
 }
