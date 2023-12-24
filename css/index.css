@@ -402,6 +402,7 @@ nav > section {
   width: 1400px;
   height: fit-content;
   margin: 0 auto;
+  margin-bottom: 0;
   padding: 80px 0;
 }
 .details-main .left {
@@ -534,7 +535,7 @@ nav > section {
 /* comment input */
 
 .card {
-  display: none;
+  display: flex;
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
@@ -544,6 +545,8 @@ nav > section {
     -0.5px -0.5px 1px rgb(207, 206, 206);
   position: relative;
   top: -127px;
+  transition: .3s;
+  opacity: 0;
 }
 
 .title {
@@ -630,7 +633,7 @@ nav > section {
   height: fit-content;
   margin-top: auto;
   position: relative;
-  transform: translate(400px, -50px);
+  transform: translate(400px, -250px);
 }
 .book-now-btn {
   display: flex;

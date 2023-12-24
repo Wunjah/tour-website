@@ -35,9 +35,7 @@ function ready() {
 }
 
 function comment(){
-  document.querySelector(".card").style.display = "flex";
-  document.querySelector(".book-now").style.transform =
-    "translate(400px, -250px)";
+  document.querySelector(".card").style.opacity = "1";
 }
 
 function addComment() {
@@ -60,9 +58,7 @@ function addComment() {
   div.textContent = comment.value;
   commentDest.innerHTML += div.outerHTML;
   comment.value = "";
-  document.querySelector(".card").style.display = "none";
-  document.querySelector(".book-now").style.transform =
-    "translate(400px, -50px)";
+  document.querySelector(".card").style.opacity = "0";
 
   console.log(commentDest);
   console.log(comment.value);
