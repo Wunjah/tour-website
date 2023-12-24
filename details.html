@@ -1,47 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="styles.css" />
   <head>
     <meta charset="UTF-8" />
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details - Tour Website</title>
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <nav>
-      <div class="nav-items">
-        <h3 class="logo">BAM-TOUR</h3>
-        <ul class="left-items">
-          <li><a href="index.html">EXPLORE</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
+      <section class="nav-one">
+        <div class="left">
+          <div class="logo" onclick="window.location.href = 'index.html'">
+            BAM-TOUR
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Search" />
+            <svg
+              width="30px"
+              height="30px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15 10.5C15 12.9853 12.9853 15 10.5 15C8.01472 15 6 12.9853 6 10.5C6 8.01472 8.01472 6 10.5 6C12.9853 6 15 8.01472 15 10.5ZM14.1793 15.2399C13.1632 16.0297 11.8865 16.5 10.5 16.5C7.18629 16.5 4.5 13.8137 4.5 10.5C4.5 7.18629 7.18629 4.5 10.5 4.5C13.8137 4.5 16.5 7.18629 16.5 10.5C16.5 11.8865 16.0297 13.1632 15.2399 14.1792L20.0304 18.9697L18.9697 20.0303L14.1793 15.2399Z"
+                fill="#080341"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="setting-options">
+          <svg
+            width="30px"
+            height="30px"
+            viewBox="0 0 24 24"
+            fill="none"
+            class="search-icon"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M15 10.5C15 12.9853 12.9853 15 10.5 15C8.01472 15 6 12.9853 6 10.5C6 8.01472 8.01472 6 10.5 6C12.9853 6 15 8.01472 15 10.5ZM14.1793 15.2399C13.1632 16.0297 11.8865 16.5 10.5 16.5C7.18629 16.5 4.5 13.8137 4.5 10.5C4.5 7.18629 7.18629 4.5 10.5 4.5C13.8137 4.5 16.5 7.18629 16.5 10.5C16.5 11.8865 16.0297 13.1632 15.2399 14.1792L20.0304 18.9697L18.9697 20.0303L14.1793 15.2399Z"
+              fill="#080341"
+            />
+          </svg>
+          <div class="language">
+            <svg
+              height="24px"
+              width="24px"
+              version="1.1"
+              id="_x32_"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 512 512"
+              xml:space="preserve"
+            >
+              <style type="text/css">
+                .st0 {
+                  fill: rgb(116, 116, 119);
+                }
+              </style>
+              <g>
+                <path
+                  class="st0"
+                  d="M255.994,0.006C114.607,0.013,0.012,114.612,0,256c0.012,141.387,114.607,255.986,255.994,255.994
+		C397.393,511.986,511.992,397.387,512,256C511.992,114.612,397.393,0.013,255.994,0.006z M97.607,97.612
+		c23.34-23.328,51.761-41.475,83.455-52.725c-15.183,18.375-27.84,41.906-37.757,69.116H82.772
+		C87.452,108.308,92.396,102.824,97.607,97.612z M65.612,138.003h69.986c-9.008,31.929-14.41,67.834-15.363,105.997H32.327
+		C34.374,205.196,46.3,169.088,65.612,138.003z M65.612,373.997C46.3,342.912,34.374,306.804,32.327,268h87.991
+		c0.961,38.124,6.21,74.092,15.206,105.998H65.612z M97.607,414.386c-5.211-5.211-10.156-10.695-14.836-16.39h60.573
+		c4.28,11.774,9.019,22.944,14.312,33.21c6.954,13.438,14.758,25.468,23.348,35.89C149.332,455.846,120.931,437.699,97.607,414.386z
+		 M243.998,479.667c-3.746-0.196-7.469-0.477-11.164-0.86c-5.89-2.64-11.722-6.25-17.5-10.961
+		c-17.632-14.359-33.976-38.671-46.398-69.85h75.061V479.667z M243.998,373.997h-83.436c-9.477-31.171-15.316-67.311-16.328-105.998
+		h99.763V373.997z M243.998,244H144.31c1.008-38.71,6.875-74.819,16.359-105.997h83.33V244z M243.998,114.003h-74.951
+		c3.109-7.79,6.367-15.312,9.934-22.195c10.64-20.625,23.17-36.89,36.354-47.656c5.777-4.71,11.609-8.32,17.5-10.96
+		c3.695-0.382,7.417-0.664,11.164-0.859V114.003z M446.392,138.003c19.312,31.085,31.234,67.194,33.281,105.997h-87.991
+		c-0.961-38.124-6.21-74.092-15.21-105.997H446.392z M414.393,97.612c5.211,5.211,10.156,10.696,14.836,16.391h-60.577
+		c-4.281-11.773-9.023-22.945-14.312-33.21c-6.953-13.437-14.758-25.468-23.347-35.89C362.668,56.16,391.065,74.301,414.393,97.612z
+		 M267.998,32.333c3.746,0.195,7.469,0.484,11.16,0.859c5.89,2.649,11.723,6.25,17.504,10.96
+		c17.636,14.359,33.976,38.671,46.397,69.85h-75.061V32.333z M267.998,138.003h83.436c9.476,31.171,15.32,67.31,16.328,105.997
+		h-99.764V138.003z M267.998,268h99.685c-1.007,38.71-6.874,74.818-16.359,105.998h-83.326V268z M296.661,467.846
+		c-5.781,4.711-11.614,8.313-17.504,10.961c-3.691,0.375-7.414,0.664-11.16,0.86v-81.67h74.951
+		c-3.109,7.789-6.367,15.312-9.933,22.195C322.376,440.816,309.845,457.081,296.661,467.846z M414.393,414.386
+		c-23.336,23.328-51.764,41.476-83.459,52.725c15.187-18.375,27.835-41.905,37.757-69.115h60.538
+		C424.548,403.692,419.604,409.176,414.393,414.386z M446.392,373.997h-69.998c9.008-31.929,14.414-67.842,15.367-105.998h87.912
+		C477.626,306.804,465.704,342.912,446.392,373.997z"
+                />
+              </g>
+            </svg>
+          </div>
+          <ul class="dropdown-n lang">
+            <li><span>English</span></li>
+            <li><span>French</span></li>
+          </ul>
+          <div class="profile">
+            <img
+              src="./images/profile-pic.jpeg"
+              alt="photo"
+              width="35px"
+              height="35px"
+            />
+            <svg
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                fill="#000000"
+              />
+            </svg>
+          </div>
+          <ul class="dropdown-n prof">
+            <li><span>Log In/ Sign Up</span></li>
+          </ul>
+        </div>
+      </section>
+      <section class="nav-two">
+        <div onclick="window.location.href = './index.html'">
+          <svg
+            width="20px"
+            height="20px"
+            viewBox="-0.5 0 25 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M22 11.8201C22 9.84228 21.4135 7.90885 20.3147 6.26436C19.2159 4.61987 17.6542 3.33813 15.8269 2.58126C13.9996 1.82438 11.9889 1.62637 10.0491 2.01223C8.10927 2.39808 6.32748 3.35052 4.92896 4.74904C3.53043 6.14757 2.578 7.92935 2.19214 9.86916C1.80629 11.809 2.00436 13.8197 2.76123 15.6469C3.51811 17.4742 4.79985 19.036 6.44434 20.1348C8.08883 21.2336 10.0222 21.8201 12 21.8201"
+              stroke="#000000"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M2 11.8201H22"
+              stroke="#000000"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M12 21.8201C10.07 21.8201 8.5 17.3401 8.5 11.8201C8.5 6.30007 10.07 1.82007 12 1.82007C13.93 1.82007 15.5 6.30007 15.5 11.8201"
+              stroke="#000000"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M18.3691 21.6901C20.3021 21.6901 21.8691 20.1231 21.8691 18.1901C21.8691 16.2571 20.3021 14.6901 18.3691 14.6901C16.4361 14.6901 14.8691 16.2571 14.8691 18.1901C14.8691 20.1231 16.4361 21.6901 18.3691 21.6901Z"
+              stroke="#000000"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M22.9998 22.8202L20.8398 20.6702"
+              stroke="#000000"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span>Explore Bamenda</span>
+        </div>
+        <div onclick="window.location.href = 'contact.html'">
+          <svg
+            fill="#000000"
+            width="20px"
+            height="20px"
+            viewBox="0 0 64 64"
+            version="1.1"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <g id="_x32_5_attachment" />
+
+            <g id="_x32_4_office" />
+
+            <g id="_x32_3_pin" />
+
+            <g id="_x32_2_business_card" />
+
+            <g id="_x32_1_form" />
+
+            <g id="_x32_0_headset" />
+
+            <g id="_x31_9_video_call" />
+
+            <g id="_x31_8_letter_box" />
+
+            <g id="_x31_7_papperplane" />
+
+            <g id="_x31_6_laptop" />
+
+            <g id="_x31_5_connection" />
+
+            <g id="_x31_4_phonebook" />
+
+            <g id="_x31_3_classic_telephone" />
+
+            <g id="_x31_2_sending_mail">
+              <g>
+                <path
+                  d="M54.5058,18.9509c-0.0022-0.0026-0.0026-0.0059-0.0048-0.0085c-0.0224-0.0256-0.0533-0.0368-0.0776-0.0596    c-0.7969-0.7159-1.8391-1.1645-2.9922-1.1645H46.627V4.5234C46.627,2.5806,45.0464,1,43.1035,1H11.5938    C9.6509,1,8.0703,2.5806,8.0703,4.5234v54.9531C8.0703,61.4194,9.6509,63,11.5938,63h31.5098    c1.9429,0,3.5234-1.5806,3.5234-3.5234V43.6719h4.8042c1.2134,0,2.3118-0.4882,3.1218-1.2725    c0.0059-0.0059,0.014-0.0076,0.0198-0.0137c0.0016-0.0016,0.0019-0.0039,0.0035-0.0056c0.8331-0.8176,1.3535-1.9531,1.3535-3.2103    V22.2168C55.9297,20.9278,55.3774,19.7718,54.5058,18.9509z M51.4312,19.7183c0.1989,0,0.39,0.0293,0.5755,0.0734L38.1084,31.9175    L24.2022,19.793c0.1868-0.0447,0.3792-0.0747,0.5795-0.0747H51.4312z M33.4756,30.5323l-10.66,10.1625    c-0.3283-0.4235-0.5319-0.9485-0.5319-1.5248V22.2168c0-0.4269,0.1176-0.8231,0.307-1.175L33.4756,30.5323z M19.3521,3h15.9897    v1.3164c0,0.7256-0.5903,1.3159-1.3159,1.3159H20.668c-0.7256,0-1.3159-0.5903-1.3159-1.3159V3z M11.5938,3h5.7583v1.3164    c0,1.8286,1.4873,3.3159,3.3159,3.3159h13.3579c1.8286,0,3.3159-1.4873,3.3159-3.3159V3h5.7617    c0.8398,0,1.5234,0.6836,1.5234,1.5234v13.1948H24.7817c-1.1594,0-2.2072,0.4528-3.0056,1.1758    c-0.021,0.0201-0.0482,0.0295-0.0676,0.0518c-0.002,0.0023-0.0024,0.0054-0.0044,0.0077    c-0.8698,0.8208-1.4204,1.9758-1.4204,3.2633v0.1577h-3.8262c-0.5522,0-1,0.4478-1,1s0.4478,1,1,1h3.8262v4.2471h-3.8262    c-0.5522,0-1,0.4478-1,1s0.4478,1,1,1h3.8262v5.1733h-3.8262c-0.5522,0-1,0.4478-1,1s0.4478,1,1,1h3.8262v1.375    c0,2.4824,2.0176,4.502,4.498,4.502H44.627V55.749H10.0703V4.5234C10.0703,3.6836,10.7539,3,11.5938,3z M43.1035,61H11.5938    c-0.8398,0-1.5234-0.6836-1.5234-1.5234V57.749H44.627v1.7275C44.627,60.3164,43.9434,61,43.1035,61z M51.4312,41.6719H24.7817    c-0.0289,0-0.0556-0.0076-0.0842-0.0085l10.2917-9.8113l2.4619,2.1465c0.1885,0.1641,0.4229,0.2461,0.6572,0.2461    s0.4692-0.082,0.6572-0.2466l2.8806-2.5132l10.5753,10.0466C51.9716,41.6156,51.709,41.6719,51.4312,41.6719z M53.9297,39.1699    c0,0.3624-0.0811,0.7049-0.2201,1.0161L43.1602,30.1639l10.4601-9.1264c0.191,0.3529,0.3094,0.7506,0.3094,1.1793V39.1699z"
+                />
+              </g>
+            </g>
+
+            <g id="_x31_1_man_talking" />
+
+            <g id="_x31_0_date" />
+
+            <g id="_x30_9_review" />
+
+            <g id="_x30_8_email" />
+
+            <g id="_x30_7_information" />
+
+            <g id="_x30_6_phone_talking" />
+
+            <g id="_x30_5_women_talking" />
+
+            <g id="_x30_4_calling" />
+
+            <g id="_x30_3_women" />
+
+            <g id="_x30_2_writing" />
+
+            <g id="_x30_1_chatting" />
+          </svg>
+          <span>Contact Us</span>
+        </div>
+      </section>
+      <div class="dropdown-n2">
+        <ul class="left">
+          <li>
+            <span>Bamenda Tours</span>
+            <svg
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                fill="#000000"
+              />
+            </svg>
+          </li>
+        </ul>
+        <ul class="right">
+          <li>
+            <span>lake Awing</span>
+          </li>
         </ul>
       </div>
-      <meta charset="UTF-8" />
     </nav>
-    <h2 class="title-text" id="title">Lake Awing</h2>
-    <div class="main-awing"><img src="awing_cmr.jpg" class="pic" /></div>
-    <p class="exp-text">
-      Lake Awing is a natural lake located near Bamenda, a city in the Northwest
-      Region of Cameroon. It is a picturesque body of water surrounded by lush
-      green hills and is known for its scenic beauty. The lake is situated
-      approximately 15 kilometers southwest of Bamenda and is a popular tourist
-      attraction in the region
-    </p>
-    <textarea id="comment-area" placeholder="Add Comment..."></textarea>
-    <button class="submit" onclick="addComment()">submit</button>
-    <h2 class="title-text">Testimonials</h2>
-    <div class="container-comment"></div>
-    <h2 class="title-text">Maps</h2>
-    <div class="maps"><img src="Pasted%20image.png" /></div>
-    <div class="button-container">
-      <button class="book" onclick="openContactPage()">BOOK NOW</button>
-    </div>
 
-    <footer class="footer">
-      <div class="container">
-        <p>&copy; 2023 Bam Tour. All rights reserved.</p>
+    <main class="details-main">
+      <div class="left page-img">
+      </div>
+      <div class="right">
+        <h1 class="details-title">Lake Awing</h1>
+        <div class="reviews">
+          <span class="stars">
+            <svg
+              fill="blue"
+              stroke="blue"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="reviews-star"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+              ></path>
+            </svg>
+            <svg
+              fill="blue"
+              stroke="blue"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="reviews-star"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+              ></path>
+            </svg>
+            <svg
+              fill="blue"
+              stroke="blue"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="reviews-star"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+              ></path>
+            </svg>
+            <svg
+              fill="blue"
+              stroke="blue"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="reviews-star"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+              ></path>
+            </svg>
+            <svg
+              fill="none"
+              stroke="blue"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="reviews-star"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+              ></path>
+            </svg>
+          </span>
+          <span class="text">4 Reviews</span>
+        </div>
+        <p class="exp-text">
+        </p>
+        <button class="bookmarkBtn" onclick="comment()">
+          <span class="IconContainer">
+            <svg fill="white" viewBox="0 0 512 512" height="1em">
+              <path
+                d="M123.6 391.3c12.9-9.4 29.6-11.8 44.6-6.4c26.5 9.6 56.2 15.1 87.8 15.1c124.7 0 208-80.5 208-160s-83.3-160-208-160S48 160.5 48 240c0 32 12.4 62.8 35.7 89.2c8.6 9.7 12.8 22.5 11.8 35.5c-1.4 18.1-5.7 34.7-11.3 49.4c17-7.9 31.1-16.7 39.4-22.7zM21.2 431.9c1.8-2.7 3.5-5.4 5.1-8.1c10-16.6 19.5-38.4 21.4-62.9C17.7 326.8 0 285.1 0 240C0 125.1 114.6 32 256 32s256 93.1 256 208s-114.6 208-256 208c-37.1 0-72.3-6.4-104.1-17.9c-11.9 8.7-31.3 20.6-54.3 30.6c-15.1 6.6-32.3 12.6-50.1 16.1c-.8 .2-1.6 .3-2.4 .5c-4.4 .8-8.7 1.5-13.2 1.9c-.2 0-.5 .1-.7 .1c-5.1 .5-10.2 .8-15.3 .8c-6.5 0-12.3-3.9-14.8-9.9c-2.5-6-1.1-12.8 3.4-17.4c4.1-4.2 7.8-8.7 11.3-13.5c1.7-2.3 3.3-4.6 4.8-6.9c.1-.2 .2-.3 .3-.5z"
+              ></path>
+            </svg>
+          </span>
+          <p class="text">Comment</p>
+        </button>
+        <div class="comments">
+          <div class="comment">
+            Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle
+            austin listicle pour-over, neutra jean shorts keytar banjo tattooed
+            umami cardigan.
+          </div>
+        </div>
+        <div class="card">
+          <span class="title">Leave a Comment</span>
+          <form class="form1">
+            <div class="group">
+              <textarea
+                id="comment"
+                name="comment"
+                rows="5"
+                required=""
+              ></textarea>
+              <label for="comment">Comment</label>
+            </div>
+            <button onclick="addComment()">Submit</button>
+          </form>
+        </div>
+
+        <div class="book-now">
+          <button class="book-now-btn"  onclick="openContactPage()">
+            <span> Book Now </span>
+            <svg
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              fill="#fff"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1"
+            >
+              <path
+                d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
+                fill="#000000"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="./index.html" class="footer-link">Home</a>
+        <a href="./contact.html" class="footer-link">Contact Us</a>
+        <a href="#about" class="footer-link">About BAM-TOUR</a>
+      </div>
+      <hr class="divider" />
+      <div class="legal-content">
+        <span class="legal-notice">© 1997-2023 Viator, Inc.</span>
+        <div class="legal-notice">
+          <a href="" class="legal-link">Terms &amp; Conditions</a>
+          <a href="" class="legal-link"> Cookie Consent </a>
+        </div>
       </div>
     </footer>
   </body>
+
   <script src="js/database.js"></script>
-  <script src="js/main.js"></script>
   <script src="js/details.js"></script>
 </html>

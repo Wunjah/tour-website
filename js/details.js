@@ -1,9 +1,9 @@
 let item;
 let id;
-let siteName = document.querySelector("#title");
-let siteImage = document.querySelector(".pic");
-let descriptionContainer = document.querySelector(".exp-text")
-let commentContainer = document.querySelector(".container-comment");
+let siteName = document.querySelector(".details-title");
+let siteImage = document.querySelector(".page-img");
+let descriptionContainer = document.querySelector(".exp-text");
+let commentDest = document.querySelector(".comments");
 
 if (location.href.includes("=")) {
   for (let i = 0; i < locationsData.length; i++) {
@@ -13,8 +13,8 @@ if (location.href.includes("=")) {
       id = location.href.split("=")[1];
       siteName.innerText = item.name;
       console.log("hello");
-      siteImage.setAttribute("src", `${item.imageName}`);
-      siteImage.setAttribute("alt", `${item.imageName}`);
+      siteImage.style.backgroundImage = `url('${item.imageName}')`;
+      console.log(siteImage);
       descriptionContainer.textContent = item.description;
       break;
     }
@@ -34,10 +34,16 @@ function ready() {
   output(arr, commentData, commentContainer);
 }
 
+function comment(){
+  document.querySelector(".card").style.display = "flex";
+  document.querySelector(".book-now").style.transform =
+    "translate(400px, -250px)";
+}
+
 function addComment() {
-  let comment = document.querySelector("#comment-area");
-  if(comment.value === "" || comment.value === " "){
-    return undefined
+  let comment = document.querySelector("#comment");
+  if (comment.value === "" || comment.value === " ") {
+    return undefined;
   }
   let newObj = {
     id: `${location.href.split("=")[1]}`,
@@ -46,16 +52,22 @@ function addComment() {
       return getCommentCode(this);
     },
   };
-
+  
   commentData.push(newObj);
-
-  output([commentData.length - 1], commentData, commentContainer);
-
+  let div = document.createElement('div');
+  div.classList.add('comment')
+  console.log(div)
+  div.textContent = comment.value;
+  commentDest.innerHTML += div.outerHTML;
   comment.value = "";
-  console.log(commentData);
+  document.querySelector(".card").style.display = "none";
+  document.querySelector(".book-now").style.transform =
+    "translate(400px, -50px)";
+
+  console.log(commentDest);
   console.log(comment.value);
 }
 
-function openContactPage(){
-  window.location.href = `contact.html?id=${id}`
+function openContactPage() {
+  window.location.href = `contact.html?id=${id}`;
 }

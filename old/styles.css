@@ -85,7 +85,7 @@ h3{
     font-size: 28px;
     font-weight: bold;
 }
-.home-container p{
+.home-text p{
     margin-left: 50px;
     margin-top: 0px;
     color: white;
@@ -158,16 +158,6 @@ h3{
 }
 
 
-.text-container1 h1{
-    font-family: "Nimbus Roman";
-    font-size: 20px;
-}
-
-
-.text-container2 h1{
-    font-family: "Nimbus Roman";
-    font-size: 20px;
-}
 .text-container button{
     width: 150px;
     height: 40px;
@@ -224,6 +214,7 @@ h3{
     margin-left: 85px;
     margin-top: 10px;
 }
+
 
 
 
