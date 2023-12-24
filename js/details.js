@@ -31,7 +31,7 @@ function ready() {
     }
     console.log(arr, element.id);
   }
-  output(arr, commentData, commentContainer);
+  output(arr, commentData, commentDest);
 }
 
 function comment(){

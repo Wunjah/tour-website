@@ -57,6 +57,22 @@ const commentData = [
     },
   },
   {
+    id: "0",
+    content:
+      " had an amazing time exploring this tourist site. The historical landmarks and architectural wonders left me in awe.",
+    code() {
+      return getCommentCode(this);
+    },
+  },
+  {
+    id: "0",
+    content:
+      "The hospitality of the locals here is exceptional. They made me feel welcome and provided valuable insights into the region's history and traditions.",
+    code() {
+      return getCommentCode(this);
+    },
+  },
+  {
     id: "1",
     content:"Lake Awing is a natural lake located near Bamenda, a city in the  Northwest Region of Cameroon. It is a picturesque body of water surro",
     code() {
