@@ -34,7 +34,7 @@ function ready() {
   output(arr, commentData, commentDest);
 }
 
-function comment(){
+function comment() {
   document.querySelector(".card").style.opacity = "1";
 }
 
@@ -50,18 +50,17 @@ function addComment() {
       return getCommentCode(this);
     },
   };
-  
+
   commentData.push(newObj);
-  let div = document.createElement('div');
-  div.classList.add('comment')
-  console.log(div)
+  let div = document.createElement("div");
+
+  div.classList.add("comment");
   div.textContent = comment.value;
+
   commentDest.innerHTML += div.outerHTML;
   comment.value = "";
+  
   document.querySelector(".card").style.opacity = "0";
-
-  console.log(commentDest);
-  console.log(comment.value);
 }
 
 function openContactPage() {

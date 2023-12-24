@@ -454,9 +454,8 @@ nav > section {
 /* comment */
 
 .comments {
-  /* display: flex; */
-  height: 170px;
-  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .comments .comment {
@@ -466,11 +465,12 @@ nav > section {
   box-shadow: 1px 1px 4px rgb(207, 206, 206),
   -0.5px -0.5px 1px rgb(207, 206, 206);
   border-radius: 40px;
-  padding: 5px 10px 15px 20px;
+  padding: 20px;
+  max-width: 200px;
 }
 .comment .x{
   position: relative;
-  left: 600px;
+  float: right;
   width: 20px;
   height: 20px;
   background-color: white;
@@ -480,6 +480,12 @@ nav > section {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: .1s all ease-out;
+}
+.comment .x:active{
+  box-shadow: 1px 1px 4px rgb(175, 175, 175),
+    -0.5px -0.5px 1px rgb(175, 175, 175)
 }
 
 .bookmarkBtn {
@@ -495,6 +501,7 @@ nav > section {
   transition-duration: 0.3s;
   overflow: hidden;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.062);
+  /* margin-top: 40px; */
 }
 
 .IconContainer {
@@ -641,13 +648,6 @@ nav > section {
 }
 
 /* book now btn */
-.book-now {
-  width: fit-content;
-  height: fit-content;
-  margin-top: auto;
-  position: relative;
-  transform: translate(400px, -250px);
-}
 .book-now-btn {
   display: flex;
   justify-content: space-between;
@@ -662,6 +662,7 @@ nav > section {
   font-size: 1.15rem;
   font-weight: lighter;
   cursor: pointer;
+  margin: 30px 0;
 }
 .book-now-btn span {
   color: white;

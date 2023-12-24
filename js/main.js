@@ -15,7 +15,6 @@ function output(range, data, cont) {
       let item = data[element].code();
       // appends item to the page
       cont.innerHTML += item;
-      console.log(item)
 
     }
   }
